@@ -1,0 +1,237 @@
+/* =========================================================
+   CAROSELLO — COMPONENT LAYER
+   components.css
+   Reusable UI System
+   ========================================================= */
+
+
+/* =========================
+   BUTTON SYSTEM
+========================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-lg);
+
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium);
+
+  transition: all var(--duration-normal) var(--ease-smooth);
+  cursor: pointer;
+  user-select: none;
+}
+
+
+/* Primary Button */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--glow-primary);
+}
+
+
+/* Secondary Button */
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+
+/* Ghost Button */
+.btn-ghost {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.btn-ghost:hover {
+  color: var(--primary);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  padding: var(--space-4) 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+  border-bottom: 1px solid var(--border);
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(11, 15, 26, 0.6);
+}
+
+
+/* =========================
+   CARD SYSTEM
+========================= */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+
+  padding: var(--space-6);
+
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* Glass Card (CAROSELLO STYLE) */
+.card-glass {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .card-glass {
+  background: rgba(18, 26, 43, 0.6);
+}
+
+
+/* =========================
+   BADGES / TAGS
+========================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.badge-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.badge-soft {
+  background: var(--surface-soft);
+  color: var(--text-secondary);
+}
+
+
+/* =========================
+   HERO SECTION BASE
+========================= */
+
+.hero {
+  padding: var(--space-10) 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-tight);
+}
+
+.hero-subtitle {
+  margin-top: var(--space-4);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+}
+
+
+/* =========================
+   FEATURE GRID
+========================= */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+
+/* =========================
+   TESTIMONIAL CARD
+========================= */
+
+.testimonial {
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.testimonial p {
+  font-size: var(--text-md);
+  color: var(--text-secondary);
+}
+
+.testimonial-author {
+  margin-top: var(--space-4);
+  font-weight: var(--weight-semibold);
+}
+
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta {
+  padding: var(--space-9);
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-6) 0;
+}

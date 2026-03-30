@@ -1,0 +1,118 @@
+.workflow-section {
+  padding: var(--space-9) 0;
+  background: var(--bg-main);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.section-header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-black);
+  color: var(--text-primary);
+}
+
+/* =========================
+   GRID
+========================= */
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.workflow-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+
+  padding: var(--space-6);
+  text-align: center;
+
+  transition:
+    transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth),
+    border-color var(--duration-normal) var(--ease-smooth);
+}
+
+.workflow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+/* =========================
+   STEP NUMBER
+========================= */
+
+.workflow-step {
+  width: 48px;
+  height: 48px;
+
+  margin: 0 auto var(--space-4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radius-full);
+
+  background: var(--primary);
+  color: white;
+
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.workflow-card h5 {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.workflow-card p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--line-normal);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .workflow-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .section-header h2 {
+    font-size: var(--text-2xl);
+  }
+}

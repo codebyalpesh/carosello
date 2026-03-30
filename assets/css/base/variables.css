@@ -1,0 +1,156 @@
+/* =========================================================
+   CAROSELLO — DESIGN TOKENS
+   variables.css
+   ========================================================= */
+
+:root {
+
+  /* =========================
+     🎨 COLOR SYSTEM (LIGHT)
+  ========================= */
+
+  --bg-main: #F7F8FC;
+  --bg-alt: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-soft: #EEF1F6;
+
+  --text-primary: #0B1220;
+  --text-secondary: #4B5565;
+  --text-muted: #7A8596;
+
+  --primary: #6C4DFF;
+  --primary-hover: #5A3EE6;
+
+  --secondary: #00D1FF;
+  --accent: #FF4D8D;
+
+  --border: rgba(15, 23, 42, 0.08);
+  --overlay: rgba(0, 0, 0, 0.35);
+
+
+  /* =========================
+     🔤 TYPOGRAPHY SCALE
+  ========================= */
+
+  --font-primary: "Inter", sans-serif;
+  --font-display: "Sora", sans-serif;
+
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+  --text-md: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2.2rem;
+  --text-2xl: 2.8rem;
+  --text-3xl: 3.6rem;
+  --text-4xl: 4.8rem;
+  --text-5xl: 6.4rem;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  --line-tight: 1.1;
+  --line-normal: 1.5;
+  --line-relaxed: 1.75;
+
+
+  /* =========================
+     📏 SPACING SYSTEM (8px GRID)
+  ========================= */
+
+  --space-1: 0.4rem;
+  --space-2: 0.8rem;
+  --space-3: 1.2rem;
+  --space-4: 1.6rem;
+  --space-5: 2.4rem;
+  --space-6: 3.2rem;
+  --space-7: 4.8rem;
+  --space-8: 6.4rem;
+  --space-9: 8.0rem;
+  --space-10: 10.0rem;
+
+
+  /* =========================
+     🟣 BORDER RADIUS
+  ========================= */
+
+  --radius-xs: 0.4rem;
+  --radius-sm: 0.8rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.6rem;
+  --radius-xl: 2.4rem;
+  --radius-2xl: 3.2rem;
+  --radius-full: 999px;
+
+
+  /* =========================
+     🌫 SHADOW + GLOW SYSTEM
+  ========================= */
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-md: 0 10px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+  --shadow-xl: 0 30px 60px rgba(0,0,0,0.18);
+
+  --glow-primary: 0 0 40px rgba(108, 77, 255, 0.35);
+  --glow-accent: 0 0 40px rgba(255, 77, 141, 0.25);
+
+
+  /* =========================
+     🎬 ANIMATION SYSTEM
+  ========================= */
+
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+  --duration-slower: 900ms;
+
+
+  /* =========================
+     🔲 Z-INDEX SCALE
+  ========================= */
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 500;
+  --z-modal: 1000;
+  --z-toast: 2000;
+}
+
+
+/* =========================
+   🌙 DARK THEME OVERRIDE
+========================= */
+
+[data-theme="dark"] {
+
+  --bg-main: #0B0F1A;
+  --bg-alt: #0F1629;
+  --surface: #121A2B;
+  --surface-soft: #1A2440;
+
+  --text-primary: #EAF0FF;
+  --text-secondary: #B5C0DD;
+  --text-muted: #7C89A6;
+
+  --primary: #8A6CFF;
+  --primary-hover: #7A5BFF;
+
+  --secondary: #00E5FF;
+  --accent: #FF5CA8;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --overlay: rgba(0, 0, 0, 0.6);
+
+  --glow-primary: 0 0 50px rgba(138, 108, 255, 0.4);
+  --glow-accent: 0 0 50px rgba(255, 92, 168, 0.3);
+}

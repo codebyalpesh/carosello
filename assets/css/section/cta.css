@@ -1,0 +1,106 @@
+.cta-section {
+  position: relative;
+  padding: var(--space-10) 0;
+  margin-right: calc(var(--space-4) * .5);
+  margin-left: calc(var(--space-4) * .5);
+  margin-bottom: var(--space-10);
+
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  color: #fff;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.2),
+    transparent 60%
+  );
+
+  opacity: 0.5;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.cta-title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-black);
+  line-height: var(--line-tight);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-subtitle {
+  margin-top: var(--space-3);
+  font-size: var(--text-md);
+  color: rgba(255,255,255,0.85);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-actions {
+  margin-top: var(--space-5);
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   BUTTON ENHANCEMENT
+========================= */
+
+.cta-section .btn-primary {
+  background: #fff;
+  color: var(--primary);
+  border-radius: var(--radius-full);
+
+  padding: var(--space-3) var(--space-6);
+
+  transition:
+    transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth);
+}
+
+.cta-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  color: var(--primary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+  .cta-title {
+    font-size: var(--text-2xl);
+  }
+
+  .cta-subtitle {
+    font-size: var(--text-sm);
+  }
+
+  .cta-section {
+    padding: var(--space-8) var(--space-4);
+  }
+}

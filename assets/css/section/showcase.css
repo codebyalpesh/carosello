@@ -1,0 +1,131 @@
+.showcase-section {
+  padding: var(--space-9) 0;
+  background: var(--bg-main);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-7);
+}
+
+.section-header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-black);
+  color: var(--text-primary);
+  line-height: var(--line-tight);
+}
+
+/* =========================
+   CAROUSEL WRAPPER
+========================= */
+
+.showcase-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   TRACK (GSAP / JS TARGET)
+========================= */
+
+.showcase-track {
+  display: flex;
+  gap: var(--space-6);
+  transition: transform var(--duration-slow) var(--ease-smooth);
+  will-change: transform;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.showcase-card {
+  min-width: 320px;
+  flex: 0 0 auto;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+
+  overflow: hidden;
+
+  transition:
+    transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth);
+}
+
+.showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+/* =========================
+   MEDIA PLACEHOLDER
+========================= */
+
+.showcase-media {
+  height: 200px;
+  background: linear-gradient(
+    135deg,
+    var(--surface-soft),
+    var(--bg-alt)
+  );
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.showcase-content {
+  padding: var(--space-5);
+}
+
+.showcase-content h5 {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.showcase-content p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--line-normal);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .showcase-track {
+    gap: var(--space-5);
+  }
+
+  .showcase-card {
+    min-width: 280px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .showcase-track {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .showcase-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .section-header h2 {
+    font-size: var(--text-2xl);
+  }
+}

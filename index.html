@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================= -->
+    <!-- BASIC META TAGS (CAROSELLO) -->
+    <!-- ============================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carosello – Modern SaaS Landing Page</title>
+    <meta name="description"
+        content="Carosello is a modern SaaS landing page template with smooth UI, carousel-driven layouts, and conversion-focused design for startups and businesses.">
+    <meta name="keywords"
+        content="Carosello, SaaS, landing page, startup template, UI carousel, Bootstrap 5, modern UI, web design">
+    <meta name="author" content="Freelancer Alpesh">
+
+    <link rel="canonical" href="https://codebyalpesh.github.io/carosello">
+
+    <!-- ============================= -->
+    <!-- OPEN GRAPH -->
+    <!-- ============================= -->
+    <meta property="og:title" content="Carosello – Modern SaaS Landing Page">
+    <meta property="og:description"
+        content="A sleek SaaS landing page template with carousel-based UI sections and high-conversion design.">
+    <meta property="og:image" content="assets/images/og-carosello.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codebyalpesh.github.io/carosello">
+
+    <!-- ========================= -->
+    <!-- FAVICONS - FULL SUPPORT -->
+    <!-- ========================= -->
+
+    <!-- Standard Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon/favicon-48x48.png">
+
+    <!-- Apple Touch Icon (iOS Safari) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+
+    <!-- Android / Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+
+    <!-- Windows Tile -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-150x150.png">
+
+    <!-- Theme Color (Mobile Browser UI) -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ============================= -->
+    <!-- BOOTSTRAP 5 CDN -->
+    <!-- ============================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- HEADER / NAVBAR -->
+    <!-- ============================= -->
+    <header class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                Carosello
+            </a>
+
+            <!-- Custom Toggler -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+            </button>
+
+            <!-- Nav -->
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 py-3 py-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#showcase">Showcase</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#docs">Docs</a>
+                    </li>
+
+                    <!-- CTA -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary btn-sm px-4 rounded-full shadow-sm" href="#get-started">
+                            Get Started
+                        </a>
+                    </li>
+
+                    <!-- Theme Toggle -->
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button class="btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fa-solid fa-moon theme-icon"></i>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ============================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================= -->
+    <main>
+
+        <!-- =========================================
+HERO SECTION
+========================================= -->
+        <section id="hero" class="hero-section d-flex align-items-center">
+
+            <!-- Animated Background Layer -->
+            <div class="hero-bg"></div>
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- LEFT -->
+                    <div class="col-lg-7">
+
+                        <div class="hero-badge">
+                            ✦ New generation visual storytelling
+                        </div>
+
+                        <h1 class="hero-title">
+                            Build visual stories that feel alive.
+                        </h1>
+
+                        <p class="hero-subtitle mt-3">
+                            Carosello helps designers and teams create interactive, scroll-driven presentations and
+                            product showcases without code.
+                        </p>
+
+                        <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+
+                            <a href="#" class="btn btn-primary btn-lg">
+                                Start Free
+                            </a>
+
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                View Demo
+                            </a>
+
+                        </div>
+
+                        <small class="d-block mt-4 text-muted">
+                            No credit card required • Setup in minutes
+                        </small>
+
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-lg-5">
+
+                        <div class="hero-visual-wrapper">
+
+                            <div class="hero-visual">
+
+                                <!-- floating fake UI elements -->
+                                <div class="floating-card card-1"></div>
+                                <div class="floating-card card-2"></div>
+                                <div class="floating-card card-3"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+TRUST / LOGOS
+========================================= -->
+        <section id="trust" class="trust-section py-5">
+            <div class="container text-center">
+
+                <p class="trust-label mb-4">
+                    Trusted by creative teams worldwide
+                </p>
+
+                <div class="trust-logos d-flex justify-content-center gap-5 flex-wrap">
+
+                    <div class="logo-placeholder">
+                        <img src="https://placehold.co/200x100" alt="">
+                    </div>
+
+                    <div class="logo-placeholder">
+                        <img src="https://placehold.co/200x100" alt="">
+                    </div>
+
+                    <div class="logo-placeholder">
+                        <img src="https://placehold.co/200x100" alt="">
+                    </div>
+
+                    <div class="logo-placeholder">
+                        <img src="https://placehold.co/200x100" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================================
+FEATURES SECTION
+========================================= -->
+        <section class="features-section">
+            <div class="container">
+
+                <!-- HEADER -->
+                <div class="feature-header">
+                    <h2>Powerful Features Built for Scale</h2>
+                    <p>Everything you need to build modern SaaS experiences.</p>
+                </div>
+
+                <!-- GRID -->
+                <div class="feature-grid">
+
+                    <div class="feature-card" data-gradient="1">
+                        <div class="feature-glow"></div>
+                        <i class="feature-icon fas fa-bolt"></i>
+                        <h5>Lightning Performance</h5>
+                        <p>Optimized architecture for ultra-fast interactions.</p>
+                    </div>
+
+                    <div class="feature-card" data-gradient="2">
+                        <div class="feature-glow"></div>
+                        <i class="feature-icon fas fa-brain"></i>
+                        <h5>Smart Automation</h5>
+                        <p>AI-powered workflows to reduce manual effort.</p>
+                    </div>
+
+                    <div class="feature-card" data-gradient="3">
+                        <div class="feature-glow"></div>
+                        <i class="feature-icon fas fa-shield-alt"></i>
+                        <h5>Secure by Design</h5>
+                        <p>Enterprise-grade security baked into every layer.</p>
+                    </div>
+
+                    <div class="feature-card" data-gradient="1">
+                        <div class="feature-glow"></div>
+                        <i class="feature-icon fas fa-chart-line"></i>
+                        <h5>Analytics Ready</h5>
+                        <p>Deep insights with real-time data tracking.</p>
+                    </div>
+
+                    <div class="feature-card" data-gradient="2">
+                        <div class="feature-glow"></div>
+                        <i class="feature-icon fas fa-cogs"></i>
+                        <h5>Highly Customizable</h5>
+                        <p>Flexible components that adapt to your brand.</p>
+                    </div>
+
+                    <div class="feature-card" data-gradient="3">
+                        <div class="feature-glow"></div>
+                        <i class="feature-icon fas fa-rocket"></i>
+                        <h5>Scalable System</h5>
+                        <p>Built to grow from startup to enterprise.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================================
+SHOWCASE SECTION
+========================================= -->
+        <section id="showcase" class="showcase-section">
+            <div class="container">
+
+                <!-- HEADER -->
+                <div class="section-header">
+                    <h2>Designed for impact</h2>
+                </div>
+
+                <!-- CAROUSEL WRAPPER -->
+                <div class="showcase-carousel">
+
+                    <!-- Placeholder cards (future JS will inject slides here) -->
+                    <div class="showcase-track">
+
+                        <div class="showcase-card">
+                            <div class="showcase-media"></div>
+                            <div class="showcase-content">
+                                <h5>Project One</h5>
+                                <p>High-impact SaaS dashboard experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="showcase-card">
+                            <div class="showcase-media"></div>
+                            <div class="showcase-content">
+                                <h5>Project Two</h5>
+                                <p>Modern analytics & conversion system.</p>
+                            </div>
+                        </div>
+
+                        <div class="showcase-card">
+                            <div class="showcase-media"></div>
+                            <div class="showcase-content">
+                                <h5>Project Three</h5>
+                                <p>Clean UI system for scale.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================================
+HOW IT WORKS
+========================================= -->
+        <section id="workflow" class="workflow-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>How it works</h2>
+                </div>
+
+                <div class="workflow-grid">
+
+                    <div class="workflow-card">
+                        <div class="workflow-step">01</div>
+                        <h5>Sign Up</h5>
+                        <p>Create your account in seconds and get started instantly.</p>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="workflow-step">02</div>
+                        <h5>Connect</h5>
+                        <p>Integrate your tools and sync your workflow easily.</p>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="workflow-step">03</div>
+                        <h5>Customize</h5>
+                        <p>Adjust settings and tailor the system to your needs.</p>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="workflow-step">04</div>
+                        <h5>Launch</h5>
+                        <p>Go live and scale your product with confidence.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================================
+PRICING SECTION
+========================================= -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Simple pricing</h2>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <!-- BASIC -->
+                    <div class="pricing-card">
+                        <h5>Starter</h5>
+                        <div class="price">
+                            <span>$9</span>/mo
+                        </div>
+
+                        <ul>
+                            <li>Basic Features</li>
+                            <li>1 Project</li>
+                            <li>Email Support</li>
+                        </ul>
+
+                        <button>Get Started</button>
+                    </div>
+
+                    <!-- FEATURED -->
+                    <div class="pricing-card featured">
+                        <div class="badge">Most Popular</div>
+
+                        <h5>Pro</h5>
+                        <div class="price">
+                            <span>$29</span>/mo
+                        </div>
+
+                        <ul>
+                            <li>All Starter Features</li>
+                            <li>Unlimited Projects</li>
+                            <li>Priority Support</li>
+                        </ul>
+
+                        <button>Get Started</button>
+                    </div>
+
+                    <!-- PREMIUM -->
+                    <div class="pricing-card">
+                        <h5>Enterprise</h5>
+                        <div class="price">
+                            <span>$99</span>/mo
+                        </div>
+
+                        <ul>
+                            <li>All Pro Features</li>
+                            <li>Dedicated Manager</li>
+                            <li>Custom Integrations</li>
+                        </ul>
+
+                        <button>Contact Sales</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================================
+FINAL CTA
+========================================= -->
+        <section id="cta" class="cta-section text-center">
+
+            <div class="container">
+
+                <h2 class="cta-title">
+                    Start building your first story today
+                </h2>
+
+                <p class="cta-subtitle">
+                    Launch faster with a powerful, no-code storytelling platform.
+                </p>
+
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-lg">
+                        Get Started Free
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- BRAND + SOCIAL -->
+                <div class="footer-brand">
+                    <h5>Carosello</h5>
+                    <p>
+                        A visual storytelling platform for modern creators.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- PRODUCT -->
+                <div class="footer-col">
+                    <h6>Product</h6>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Showcase</a></li>
+                    </ul>
+                </div>
+
+                <!-- COMPANY -->
+                <div class="footer-col">
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- NEWSLETTER -->
+                <div class="footer-newsletter">
+                    <h6>Stay updated</h6>
+                    <p>Get product updates and tips.</p>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+                <p>© 2026 Carosello. All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
